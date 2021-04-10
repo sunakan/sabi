@@ -1,0 +1,29 @@
+.実行
+----
+$ cargo run
+----
+
+.build and run
+----
+$ cargo build
+$ ./target/debug/hello_cargo
+----
+
+== Relase build
+
+.コマンド
+----
+$ cargo build --release
+----
+
+* 最適化オプション
+* ベンチマークとるときとか
+
+== git cloneしてから走らせる
+
+.コマンド
+----
+$ git clone xxx
+$ cd xxx
+$ cargo build
+----
