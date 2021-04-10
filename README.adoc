@@ -1,0 +1,5 @@
+= Note
+
+----
+$ cargo new xxxx --bin
+----
