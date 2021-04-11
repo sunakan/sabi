@@ -11,7 +11,7 @@ impl Rectangle {
 }
 
 fn main() {
-    let width1  = 30;
+    let width1 = 30;
     let height1 = 50;
 
     // ---------------------引数２つ版
@@ -28,7 +28,10 @@ fn main() {
     );
 
     // ---------------------リファクタ2
-    let rect2 = Rectangle { width: width1, height: height1 };
+    let rect2 = Rectangle {
+        width: width1,
+        height: height1,
+    };
     println!(
         "The area of the rectangle is {} square pixels.",
         area3(&rect2)

@@ -1,4 +1,3 @@
-
 fn main() {
     let s = String::from("hello"); // sがスコープに入る
 
@@ -17,7 +16,6 @@ fn main() {
 
     let s3_and_len = calculate_length(s3);
     println!("{:?}", s3_and_len);
-
 } // ここでxがスコープを抜け、sもスコープを抜ける。ただし、sの値はムーブされているので、何も特別なことは起こらない。
   //
 
