@@ -1,4 +1,4 @@
-fn largest<T>(list: &[T]) -> T {
+fn largest<T: PartialOrd + Copy>(list: &[T]) -> T {
     let mut largest = list[0];
     for &item in list.iter() {
         if item > largest {
@@ -39,6 +39,10 @@ fn main() {
     println!("------------------------");
     println!("The largest char is {}", result);
     let result = largest(&number_list);
-    println!("------------------------");
+    println!("------------------------largest()");
     println!("The largest number is {}", result);
+    let result = largest(&char_list);
+    println!("------------------------largest()");
+    println!("The largest char is {}", result);
+
 }
