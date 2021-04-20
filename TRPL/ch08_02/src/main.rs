@@ -13,5 +13,5 @@ fn main() {
     //println!("{}", field_name);
 
     let v = map.get(&String::from("Blue"));
-    println!("{:?}",v);
+    println!("{:?}", v);
 }

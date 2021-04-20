@@ -32,7 +32,7 @@ fn read_username_from_file3() -> Result<String, io::Error> {
 }
 
 fn main() {
-    let r  = read_username_from_file();
+    let r = read_username_from_file();
     let r2 = read_username_from_file2();
     let r3 = read_username_from_file3();
     println!("{:?}", r);

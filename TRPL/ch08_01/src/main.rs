@@ -5,5 +5,5 @@ fn main() {
     println!("{}", len);
     let hello = String::from("Здравствуйте");
     let s = &hello[0..4];
-    println!("{}",s);
+    println!("{}", s);
 }

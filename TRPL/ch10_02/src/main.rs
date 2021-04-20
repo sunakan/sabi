@@ -16,7 +16,6 @@ impl Point<f32> {
     }
 }
 
-
 fn main() {
     let p = Point { x: 5, y: 10 };
 
