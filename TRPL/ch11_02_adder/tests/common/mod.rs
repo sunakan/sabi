@@ -1,3 +1,3 @@
 //pub mod common {
-    pub fn setup() {}
+pub fn setup() {}
 //}
