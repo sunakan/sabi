@@ -18,7 +18,11 @@
 /// assert_eq!(6, ch14_01_comment_docs::add_one(5));
 /// ```
 pub fn add_one(x: i32) -> i32 {
-    if x > 2 { panic!("hoge"); } else { x + 1 }
+    if x > 2 {
+        panic!("hoge");
+    } else {
+        x + 1
+    }
 }
 
 #[cfg(test)]

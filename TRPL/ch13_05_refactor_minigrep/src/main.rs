@@ -1,7 +1,7 @@
 extern crate ch13_05_refactor_minigrep;
 
-use std::{env, process};
 use ch13_05_refactor_minigrep::Config;
+use std::{env, process};
 
 fn main() {
     //let args: Vec<String> = env::args().collect();

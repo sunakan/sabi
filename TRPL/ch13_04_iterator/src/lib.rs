@@ -39,7 +39,8 @@ mod tests {
 
     #[test]
     fn b() {
-        let sum: u32 = Counter::new().zip(Counter::new().skip(1))
+        let sum: u32 = Counter::new()
+            .zip(Counter::new().skip(1))
             .map(|(a, b)| a * b)
             .filter(|x| x % 3 == 0)
             .sum();
@@ -49,16 +50,7 @@ mod tests {
     // zipは少ない方に合わせる
     #[test]
     fn c() {
-        let c: Vec<(u32, u32)> = Counter::new().zip(Counter::new().skip(1))
-            .collect();
-        assert_eq!(
-            vec![
-                (1, 2),
-                (2, 3),
-                (3, 4),
-                (4, 5),
-            ],
-            c
-        );
+        let c: Vec<(u32, u32)> = Counter::new().zip(Counter::new().skip(1)).collect();
+        assert_eq!(vec![(1, 2), (2, 3), (3, 4), (4, 5),], c);
     }
 }
